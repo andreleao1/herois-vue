@@ -11,7 +11,9 @@
               </tr>
             </thead>
             <tbody v-for="(heroi, indice) in herois" :key="indice">
-              <!--Faça a lógica aqui-->
+              <tr scope="row" v-if="heroi.empresa==='Marvel'">
+                <td>{{ heroi.nome }}</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -23,7 +25,9 @@
                 </tr>
               </thead>
             <tbody v-for="(heroi, indice) in herois" :key="indice">
-              <!--Faça a lógica aqui-->
+              <tr scope="row" v-if="heroi.empresa==='DC'">
+                <td>{{ heroi.nome }}</td>
+              </tr>
             </tbody>
           </table>
         </div>
