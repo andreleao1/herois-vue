@@ -1,16 +1,18 @@
 <template>
   <div id="app">
+    <Herois />
   </div>
 </template>
 
 <script>
+import Herois from "./components/Herois.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-
-  }
-}
+    Herois,
+  },
+};
 </script>
 
 <style>
